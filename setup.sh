@@ -9,8 +9,7 @@ elif [ ! -f /etc/mysql/debian.cnf ]; then
 	echo "skipping newrelic-mysql-plugin configuration (no mysql-server detected)"
 	exit 0
 elif [ "`which java`" = "" ]; then
-	echo "skipping newrelic-mysql-plugin configuration (no java detected)"
-	exit 0
+	/opt/farm/scripts/setup/role.sh sf-java8
 fi
 
 path=/opt/newrelic
