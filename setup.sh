@@ -12,6 +12,8 @@ elif [ "`which java`" = "" ]; then
 	/opt/farm/scripts/setup/role.sh sf-java8
 fi
 
+install_deb sudo
+
 path=/opt/newrelic
 mkdir -p $path
 
