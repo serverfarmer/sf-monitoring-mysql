@@ -1,4 +1,5 @@
 #!/bin/sh
+. /opt/farm/scripts/functions.install
 
 /opt/farm/scripts/setup/role.sh sf-monitoring-newrelic
 
