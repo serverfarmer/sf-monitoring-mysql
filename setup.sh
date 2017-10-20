@@ -1,7 +1,7 @@
 #!/bin/sh
 . /opt/farm/scripts/functions.install
 
-/opt/farm/scripts/setup/role.sh sf-monitoring-newrelic
+/opt/farm/scripts/setup/extension.sh sf-monitoring-newrelic
 
 if [ ! -s /etc/local/.config/newrelic.license ]; then
 	echo "skipping newrelic-mysql-plugin configuration (no license key configured)"
@@ -10,7 +10,7 @@ elif [ ! -f /etc/mysql/debian.cnf ]; then
 	echo "skipping newrelic-mysql-plugin configuration (no mysql-server detected)"
 	exit 0
 elif [ "`which java`" = "" ]; then
-	/opt/farm/scripts/setup/role.sh sf-java8
+	/opt/farm/scripts/setup/extension.sh sf-java8
 fi
 
 install_deb sudo
