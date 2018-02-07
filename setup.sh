@@ -1,5 +1,4 @@
 #!/bin/sh
-. /opt/farm/scripts/functions.install
 
 /opt/farm/scripts/setup/extension.sh sf-monitoring-newrelic
 
