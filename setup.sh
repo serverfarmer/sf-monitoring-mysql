@@ -13,7 +13,7 @@ elif [ "`which java`" = "" ]; then
 	/opt/farm/scripts/setup/extension.sh sf-java8
 fi
 
-install_deb sudo
+/opt/farm/ext/repos/package/install.sh sudo
 
 path=/opt/newrelic
 mkdir -p $path
